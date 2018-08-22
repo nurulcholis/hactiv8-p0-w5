@@ -39,6 +39,5 @@ console.log(naikAngkot([
 // [ { penumpang: 'Dimitri', naikDari: 'B', tujuan: 'F', bayar: 8000 },
 //   { penumpang: 'Icha', naikDari: 'A', tujuan: 'B', bayar: 2000 } ]
 
-//console.log(naikAngkot([])); //[]
-//console.log();
+console.log(naikAngkot([])); //[]
 
