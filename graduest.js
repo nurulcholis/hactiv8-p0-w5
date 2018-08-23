@@ -22,16 +22,17 @@ var graduates = [
   ];
 
   var myData = {};
+  var temp = null;
   for(var i = 0; i < graduates.length; i++){
     myData[graduates[i]['class']] = [];
-    var temp = null;
+    temp = null;
     for(var j = 0; j < graduates.length; j++){
         if(graduates[i]['class'] === graduates[j]['class']){
             if(temp === null){
                 temp = graduates[j];
             }
             if(temp !== null){
-                if(temp['score'] > 75){
+                if(graduates[j]['score'] > 75){
                     temp.score = graduates[j]['score'];
                 }
             } 

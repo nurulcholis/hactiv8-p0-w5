@@ -23,9 +23,18 @@ function highestScore(students){
             }
         }
       }
-      output[students[i]['class']] = temp;  
+      output[students[i]['class']] = temp; 
     }
   }
+
+  for(let key in output){
+    for(var i = 0; i < output[key].length; i++){
+      delete output[key][i].class;
+    }
+  }
+
+  
+
   return output;
 }
 
